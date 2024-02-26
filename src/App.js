@@ -22,8 +22,10 @@ function App() {
   const [treevalue, settreevalue] = useState(false)
   const [fourvalue, setfourvalue] = useState(false)
 
+  const [monny, setmonny] = useState(0)
 
-  return (
+
+  return (  
     <div className="App h-screen w-screen bg-blue-400 flex justify-center items-center">
       <div className='h-[85%] w-[65%]  flex'>
         <div className="sid h-[100%] w-[30%] rounded-xl">
@@ -39,7 +41,7 @@ function App() {
             <Firstcomp setfirstvalue={setfirstvalue} setsecondvalue={setsecondvalue}></Firstcomp> </div> :""
           }
           {
-            secondvalue == true ?  <div className="h-[100%] w-[70%] bg-white rounded-xl flex justify-center items-center flex-col"> <Secondcomp  Arcade={Arcade} Pro={Pro} Advanced={Advanced} setsecondvalue={setsecondvalue} setfirstvalue={setfirstvalue} settreevalue={settreevalue}></Secondcomp> </div> : ""
+            secondvalue == true ?  <div className="h-[100%] w-[70%] bg-white rounded-xl flex justify-center items-center flex-col"> <Secondcomp  setmonny={setmonny} monny={monny} Arcade={Arcade} Pro={Pro} Advanced={Advanced} setsecondvalue={setsecondvalue} setfirstvalue={setfirstvalue} settreevalue={settreevalue}></Secondcomp> </div> : ""
           }
           {
             treevalue == true ? <div className="h-[100%] w-[70%] bg-white rounded-xl flex justify-center items-center flex-col"> <Treecomp setsecondvalue={setsecondvalue} setfirstvalue={setfirstvalue} settreevalue={settreevalue}></Treecomp> </div>: ""

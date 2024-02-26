@@ -9,7 +9,7 @@ export default function Treecomp(props) {
                     <p className="text-gray-400">add on help enhance your game gaming experience</p>
                 </div>
                 <div className="h-[60%] w-[80%] flex justify-center items-start flex-col gap-5">
-                    <div className='flex justify-between items-center w-[80%] bg-blue-400'>
+                    <div className='flex justify-between items-center w-[80%]'>
                       <input type="checkbox" defaultChecked className="checkbox" />
                       <div className='flex justify-start items-start flex-col w-[70%]'>
                         <h1>Online service</h1>
@@ -19,7 +19,7 @@ export default function Treecomp(props) {
                         <p>+10/yr</p>
                       </div>
                     </div>
-                    <div className='flex justify-between items-center w-[80%] bg-blue-400'>
+                    <div className='flex justify-between items-center w-[80%]'>
                     <input type="checkbox" defaultChecked className="checkbox" />
                       <div className='flex justify-start items-start flex-col w-[70%]'>
                         <h1>Online service</h1>
@@ -29,7 +29,7 @@ export default function Treecomp(props) {
                         <p>+10/yr</p>
                       </div>
                     </div>
-                    <div className='flex justify-between items-center w-[80%] bg-blue-400'>
+                    <div className='flex justify-between items-center w-[80%]'>
                     <input type="checkbox" defaultChecked className="checkbox" />
                       <div className='flex justify-start items-start flex-col w-[70%]'>
                         <h1>Online service</h1>
@@ -41,8 +41,8 @@ export default function Treecomp(props) {
                     </div>
                 </div>
 
-                <div className="h-[15%] w-[80%] flex justify-between items-end">
-                    <button className="text-white h-11 w-28 rounded-xl bg-blue-950" onClick={() => (props.setsecondvalue(true), props.settreevalue(false))}>BACK STEP</button>
+                <div className="h-[15%] w-[80%] flex justify-between items-end font-bold">
+                    <button className="text-blue-950 h-11 w-28 rounded-xl border-blue-950" onClick={() => (props.setsecondvalue(true), props.settreevalue(false))}>BACK STEP</button>
                     <button className="text-white h-11 w-28 rounded-xl bg-blue-950" onClick={() => (props.settreevalue(false), props.settreevalue(true))}>NEXT STEP</button>
                 </div>
               </div>
