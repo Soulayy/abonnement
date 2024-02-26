@@ -1,0 +1,4 @@
+.divhover div:hover {
+    background-color: rgba(137, 43, 226, 0.152);
+    border-color: blueviolet;
+}
