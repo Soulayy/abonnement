@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.sid{
+  background-image: url(./img/img_form/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
