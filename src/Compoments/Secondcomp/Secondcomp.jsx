@@ -1,11 +1,10 @@
-import { useRef, useState } from "react";
+import {useState } from "react";
 import "./Secondcomp.css";
-import { toBeChecked } from "@testing-library/jest-dom/matchers";
 
 
 export default function Secondcomp(props) {
 
-    const activemoi = useRef(null);
+
 
     return (
         <div className="h-[95%] w-[95%] flex justify-center items-center flex-col">
@@ -21,9 +20,8 @@ export default function Secondcomp(props) {
                         <img src={props.Arcade} alt="" />
                         </div>
                         <h1>Arcade</h1>
-                        {
-                            activemoi == true ? <p>$9/mo</p> : <p>$60/mo</p>
-                        }
+                        <p>{
+                        }</p>
                     </div>
                     <div className="h-[60%] w-[40%] border-2 flex justify-around items-start flex-col p-3 rounded-xl">
                     <div className="h-[60%]">
@@ -32,26 +30,27 @@ export default function Secondcomp(props) {
                         </div>
 
                         <h1>Advanced</h1>
-                        {
+                        {/* {
                             activemoi == true ? <p>$9/mo</p> : <p>$60/mo</p>
-                        }
+                        } */}
                     </div>
                     <div className="h-[60%] w-[40%] border-2 flex justify-around items-start flex-col p-3 rounded-xl">
                     <div className="h-[60%]">
 
                         <img src={props.Pro} alt="" />
+                        
                         </div>
 
                         <h1>Arcade</h1>
-                        {
+                        {/* {
                             toBeChecked == true ? <p>$9/mo</p> : <p>$60/mo</p>
-                        }
+                        } */}
                     </div>
                 </div>
                 <div className="form-control w-[80%] bg-slate-500">
                     <label className="label cursor-pointer w-[90%] text-blue-950 font-bold">
                         <p>Monthly</p>
-                        <input ref={activemoi} type="checkbox" className="toggle"/> 
+                        <input type="checkbox" className="toggle"/> 
                         <p>Yearly</p>
 
                     </label>
